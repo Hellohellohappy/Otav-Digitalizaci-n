@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(corazon.jpg);
+  background-size: cover;            
+  background-position: center;       
+  color: #333;
+}
+
+canvas {
+  border: 2px solid black; 
+  margin-bottom: 20px;
+  background-color: white; 
+}
+
+h1 {
+  color: #000;
+  margin-top: 0;
+}
+
+#letras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 600px; 
+}
+
+.letra-btn {
+  background-color: rgb(24, 23, 23); 
+  border: 1px solid rgb(24, 23, 23); 
+  color: rgb(240, 235, 235);      
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  min-width: 40px;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s; 
+}
+
+.letra-btn:hover:not(.disabled) {
+  background-color: rgb(112, 4, 4); 
+  color: white; 
+}
+
+
+.letra-btn.disabled {
+  background-color: rgb(112, 4, 4); 
+  color: white; 
+  cursor: not-allowed;
+}
+
+#mensaje-juego {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  min-height: 1.5em; 
+}
+
+#reiniciarBtn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: none; 
+}
+
+#reiniciarBtn:hover {
+  background-color: #333;
+}
+
+#titulo-principal {
+  color: rgb(255,255,255); (este es el de el ahorcado, acomodar);
+  text-align center;   
+  background-color: rgb(0,0,0); 
+  padding: 10px 20px;     
+  display: inline-block;
+  border-radius: 5px; 
+  margin-bottom: 20px; 
+}
+
+#subtitulo-suerte {
+  color: white;  (este es el de el suerte);
+  text-align: center;   
+  background-color: rgb(0,0,0); 
+  padding: 8px 15px; rgb(0,0,0)
+  display: inline-block;
+  border-radius: 5px; 
+  margin-top: 10px; 
+  margin-bottom: 20px; 
+}
+
+body {
+  font-family: time_new_roman, time_new_roman;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+canvas {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  background-color: white;
+}

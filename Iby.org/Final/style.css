@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+  margin: 0;
+  overflow: hidden; /* Esto oculta cualquier contenido que se desborde */
+  background-color: black;
+  font-family: "Courier New", monospace;
+}
+
+.textbox {
+  position: absolute;
+  top: 10px; /* Posicionado en la parte superior */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.9); /* Aumentado a 0.9 para que sea menos transparente y más visible */
+  border: 2px dashed #39ff14;
+  color: #39ff14;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  font-size: 16px;
+  text-shadow: 0 0 3px #39ff14;
+  z-index: 1000; /* MUY ALTO: Asegura que el cuadro de texto esté siempre encima de todo lo demás */
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100vw;   /* Limita el ancho máximo al 100% del ancho del viewport */
+  max-height: 100vh;  /* Limita la altura máxima al 100% de la altura del viewport */
+  width: auto;        /* Permite que el ancho se ajuste automáticamente */
+  height: auto;       /* Permite que la altura se ajuste automáticamente */
+}
+
+/* NUEVA REGLA: Para la imagen GIF de la primera escena */
+.scene-0-img {
+  max-width: 100vw !important;  /* Override the width set by p5.js with !important */
+  max-height: 100vh !important; /* Override the height set by p5.js with !important */
+  width: auto !important;       /* Allow CSS to control width for scaling */
+  height: auto !important;      /* Allow CSS to control height for scaling */
+  object-fit: contain;          /* Ensures the image scales down but maintains its aspect ratio without cropping */
+  z-index: 999;                 /* Ligeramente por debajo del textbox, para que el textbox aparezca encima */
+}
